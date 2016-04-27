@@ -1,0 +1,39 @@
+{
+  "name": "svgx",
+  "version": "0.0.0",
+  "description": "is a universal SVG renderer",
+  "main": "index.js",
+  "scripts": {
+    "check-deps": "npm outdated",
+    "lint": "standard",
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "test": "NODE_PATH=src babel-node test/index.js"
+  },
+  "pre-commit": [
+    "lint",
+    "test",
+    "check-deps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/SVGx.git"
+  },
+  "keywords": [
+    "svg",
+    "universal",
+    "react"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/SVGx/issues"
+  },
+  "homepage": "http://npm.im/svgx",
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "tape": "^4.5.1"
+  }
+}
