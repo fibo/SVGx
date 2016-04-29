@@ -20,7 +20,7 @@ npm run example
 
 It generates the following SVG output
 
-[!SVG example][example_svg]
+![SVG example][example_svg]
 
 ## Installation
 
