@@ -1,21 +1,26 @@
 # SVGx
 
-> is a universal SVG renderer
+> shows how to render SVG server side
 
 [![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx) [![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master) [![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-* [Status](#status)
-* [Installation](#installation)
-* [License](#license)
+Thanks to React it is feasible to achieve server side rendering SVG.
+Actually, this package contains a recipe to render and test SVG server side.
 
-## Status
+You can try this [example.js][example_js] script, by launching commands
 
-*SVGx* is at a very early stage, but, thanks to React it is feasible to achieve
-server side rendering SVG using a Node.js script. See [this first test](https://github.com/fibo/SVGx/blob/master/test/components/Svg.js)
+```bash
+git clone https://github.com/fibo/SVGx.git
+cd SVGx
+npm install
+npm run example
+```
 
-> Any feedback/contribution is welcome!
+It generates the following SVG output
+
+[!SVG example][example_svg]
 
 ## Installation
 
@@ -28,3 +33,6 @@ npm install svgx
 ## License
 
 [MIT](http://g14n.info/mit-license/)
+
+[example_js]: https://github.com/fibo/SVGx/blob/master/example.js
+[example_svg]: https://cdn.rawgit.com/fibo/SVGx/master/example.svg
