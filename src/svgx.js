@@ -6,7 +6,7 @@ const render = (jsx) => {
 
   let $ = dom.load(result, { xmlMode: true })
 
-  $('svg').attr('xlmns', 'http://www.w3.org/svg/2000')
+  $('svg').attr('xmlns', 'http://www.w3.org/svg/2000')
 
   return $.html()
 }
