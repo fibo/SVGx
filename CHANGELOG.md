@@ -9,16 +9,17 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ### Added
 
-## [0.3.0] - 
+## [0.3.0] - 2016-05-01
 
 ### Added
 
 - CHANGELOG.md
 - render
-- Svg component default props: contentStyle, version
-- Svg component injected namespace attributes
+- Svg component default props: version
+- Rect component
+- Inject xmlns attributes
+- Prepend doctype
 - gh-pages
-- force closing tags
 
 ## [0.2.0] - 2016-06-28
 

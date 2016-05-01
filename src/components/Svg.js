@@ -7,12 +7,13 @@ const Svg = (props) => {
 }
 
 Svg.propTypes = {
+  contentStyleType: PropTypes.string,
   height: PropTypes.number.isRequired,
+  version: PropTypes.string,
   width: PropTypes.number.isRequired
 }
 
 Svg.defaultProps = {
-  contentStyleType: 'text/css',
   version: '1.0'
 }
 
