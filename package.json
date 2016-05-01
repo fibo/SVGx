@@ -1,7 +1,7 @@
 {
   "name": "svgx",
   "version": "0.3.0",
-  "description": "shows how to render SVG server side",
+  "description": "is a universal SVG renderer",
   "main": "src/svgx.js",
   "scripts": {
     "check-deps": "npm outdated",

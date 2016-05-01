@@ -62,6 +62,11 @@ npm install svgx
 
 > Static render function: it works server side.
 
+* **@param** `{ReactElement}` jsx
+* **@param** `{Object}` [opts]
+* **@param** `{Boolean}` [opts.doctype]
+* **@param** `{Boolean}` [opts.xmlns]
+
 ## License
 
 [MIT](http://g14n.info/mit-license/)
