@@ -17,4 +17,8 @@ const svgOutput = render(jsx, opts)
 
 const filePath = path.join(__dirname, 'example.svg')
 
-fs.writeFile(filePath, svgOutput, 'utf8')
+fs.writeFile(filePath, svgOutput, 'utf8', (err, content) => {
+  if (err) throw err
+
+  console.log('See file example.svg')
+})

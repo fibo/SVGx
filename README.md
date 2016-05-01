@@ -39,6 +39,10 @@ npm install svgx
 
 ## API
 
+### `svgx.Svg`
+
+### `svgx.render(jsx[, opts])`
+
 ## License
 
 [MIT](http://g14n.info/mit-license/)
