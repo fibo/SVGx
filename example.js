@@ -5,20 +5,16 @@ import fs from 'fs'
 import path from 'path'
 import { render, Svg } from 'svgx'
 
-const opts = { doctype: true }
-
-const jsx = (
+const svgOutput = render(
   <Svg width={100} height={100} >
     <rect x={10} y={10} width={50} height={50} />
   </Svg>
 )
 
-const svgOutput = render(jsx, opts)
+const filePath = path.join(__dirname, 'gh-pages/example.svg')
 
-const filePath = path.join(__dirname, 'example.svg')
-
-fs.writeFile(filePath, svgOutput, 'utf8', (err, content) => {
+fs.writeFile(filePath, svgOutput, 'utf8', (err) => {
   if (err) throw err
 
-  console.log('See file example.svg')
+  console.log(`See file ${filePath}`)
 })

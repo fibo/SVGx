@@ -6,6 +6,7 @@ const Svg = (props) => {
       contentStyleType={props.contentStyleType}
       height={props.height}
       width={props.width}
+      version={props.version}
     >
       {props.children}
     </svg>
@@ -19,7 +20,8 @@ Svg.propTypes = {
 }
 
 Svg.defaultProps = {
-  contentStyleType: 'text/css'
+  contentStyleType: 'text/css',
+  version: '1.0'
 }
 
 export default Svg
