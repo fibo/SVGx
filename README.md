@@ -13,8 +13,18 @@
 
 ## Description
 
+SVGx is at a very early stage.
+
+> Every feedback/contribution is welcome!
+
 Thanks to React it is feasible to achieve server side rendering SVG. However,
-there are few common pit falls: this package tries to avoid them.
+there are few common pit falls. In order to avoid them this package implements
+the following features:
+
+* Optionally prepend doctype.
+* Optionally inject `xmlns` and `xmlns:xlink` attributes.
+* Define required `propTypes` and sensible `defaultProps`.
+
 Actually, this package is also a recipe to *render and test SVG server side*.
 
 You can try this [example.js][example_js] script, by launching commands
@@ -40,9 +50,13 @@ npm install svgx
 
 ## API
 
-### `svgx.components`
+### `svgx.Svg`
 
-> Reusable React components, with sensible default props.
+> React component, implements `svg` tag.
+
+### `svgx.Rect`
+
+> React component, implements `rect` tag.
 
 ### `svgx.render(jsx[, opts])`
 

@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react'
 
-import forceClosingTag from './forceClosingTag'
-
 const Rect = (props) => {
   return (
-    <rect {...props}>{forceClosingTag}{props.children}</rect>
+    <rect {...props}>{props.children}</rect>
   )
 }
 
 Rect.propTypes = {
+  x: PropTypes.number,
+  y: PropTypes.number,
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired
 }

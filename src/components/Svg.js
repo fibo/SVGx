@@ -1,10 +1,8 @@
 import React, { PropTypes } from 'react'
 
-import forceClosingTag from './forceClosingTag'
-
 const Svg = (props) => {
   return (
-    <svg {...props}>{forceClosingTag}{props.children}</svg>
+    <svg {...props}>{props.children}</svg>
   )
 }
 

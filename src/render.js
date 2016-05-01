@@ -1,7 +1,7 @@
 import dom from 'cheerio'
 import reactDom from 'react-dom/server'
 
-const doctype = `<?xml version="1.0" standalone="no"?>
+const doctype = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 `
 const render = (jsx, opts = {}) => {
@@ -13,7 +13,7 @@ const render = (jsx, opts = {}) => {
 
   // Currently, React strips off namespace attributes.
   if (opts.xmlns) {
-    $svg.attr('xmlns', 'http://www.w3.org/svg/2000')
+    $svg.attr('xmlns', 'http://www.w3.org/2000/svg')
     $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
   }
 
