@@ -7,7 +7,7 @@
     "check-deps": "npm outdated",
     "lint": "standard",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "test": "NODE_PATH=src babel-tape-runner test/**.js",
+    "test": "NODE_PATH=src babel-tape-runner test/components/Svg.js",
     "example": "NODE_PATH=src babel-node example.js"
   },
   "pre-commit": [

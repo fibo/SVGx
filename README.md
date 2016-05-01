@@ -1,10 +1,17 @@
 # SVGx
 
-> shows how to render SVG server side
+> is a universal SVG renderer
 
 [![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx) [![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master) [![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+* [Description](#description)
+* [Installation](#installation)
+* [Api](#api)
+* [License](#license)
+
+## Description
 
 Thanks to React it is feasible to achieve server side rendering SVG.
 Actually, this package contains a recipe to render and test SVG server side.
@@ -30,9 +37,11 @@ With [npm](https://npmjs.org/) do
 npm install svgx
 ```
 
+## API
+
 ## License
 
 [MIT](http://g14n.info/mit-license/)
 
 [example_js]: https://github.com/fibo/SVGx/blob/master/example.js
-[example_svg]: https://g14n.info/SVGx/example.svg
+[example_svg]: https://cdn.rawgit.com/fibo/SVGx/master/example.svg

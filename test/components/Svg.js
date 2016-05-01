@@ -1,16 +1,16 @@
 import dom from 'cheerio'
 import React from 'react'
 import reactDom from 'react-dom/server'
-import Foo from 'components/Foo'
+import { Svg } from 'svgx'
 import test from 'tape'
 
 const render = reactDom.renderToStaticMarkup
 
-test('Foo', (t) => {
+test('Svg', (t) => {
   const height = 100
   const width = 100
 
-  const el = <Foo width={width} height={height}/>
+  const el = <Svg width={width} height={height}/>
 
   const $ = dom.load(render(el), { xmlMode: true })
 
