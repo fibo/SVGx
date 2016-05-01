@@ -53,4 +53,4 @@ npm install svgx
 [MIT](http://g14n.info/mit-license/)
 
 [example_js]: https://github.com/fibo/SVGx/blob/master/example.js
-[example_svg]: https://cdn.rawgit.com/fibo/SVGx/master/example.svg
+[example_svg]: https://g14n.info/SVGx/example.svg
