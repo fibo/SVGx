@@ -1,20 +1,14 @@
 import React, { PropTypes } from 'react'
 
+import forceClosingTag from './forceClosingTag'
+
 const Svg = (props) => {
   return (
-    <svg
-      contentStyleType={props.contentStyleType}
-      height={props.height}
-      width={props.width}
-      version={props.version}
-    >
-      {props.children}
-    </svg>
+    <svg {...props}>{forceClosingTag}{props.children}</svg>
   )
 }
 
 Svg.propTypes = {
-  contentStyleType: PropTypes.string,
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired
 }

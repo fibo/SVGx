@@ -3,11 +3,11 @@
 import React from 'react'
 import fs from 'fs'
 import path from 'path'
-import { render, Svg } from 'svgx'
+import { render, Svg, Rect } from 'svgx'
 
 const svgOutput = render(
-  <Svg width={100} height={100} >
-    <rect x={10} y={10} width={50} height={50}></rect>
+  <Svg width={100} height={100}>
+    <Rect x={10} y={10} width={50} height={50}/>
   </Svg>
 )
 

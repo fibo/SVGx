@@ -12,8 +12,10 @@ const render = (jsx, opts = {}) => {
   let $svg = $('svg')
 
   // Currently, React strips off namespace attributes.
-  $svg.attr('xmlns', 'http://www.w3.org/svg/2000')
-  $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+  if (opts.xmlns) {
+    $svg.attr('xmlns', 'http://www.w3.org/svg/2000')
+    $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+  }
 
   var result = $.html()
 

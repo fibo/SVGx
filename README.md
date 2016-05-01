@@ -14,7 +14,7 @@
 ## Description
 
 Thanks to React it is feasible to achieve server side rendering SVG. However,
-some features are missing and server side rendering is not straightforward.
+there are few common pit falls: this package tries to avoid them.
 Actually, this package is also a recipe to *render and test SVG server side*.
 
 You can try this [example.js][example_js] script, by launching commands
@@ -40,13 +40,13 @@ npm install svgx
 
 ## API
 
-### `svgx.Svg`
+### `svgx.components`
 
-> Reusable React component, with sensible default props.
+> Reusable React components, with sensible default props.
 
 ### `svgx.render(jsx[, opts])`
 
-> Static render function, works server side.
+> Static render function: it works server side.
 
 ## License
 

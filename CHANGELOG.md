@@ -18,6 +18,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 - Svg component default props: contentStyle, version
 - Svg component injected namespace attributes
 - gh-pages
+- force closing tags
 
 ## [0.2.0] - 2016-06-28
 
