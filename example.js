@@ -7,7 +7,7 @@ import { render, Svg } from 'svgx'
 
 const svgOutput = render(
   <Svg width={100} height={100} >
-    <rect x={10} y={10} width={50} height={50} />
+    <rect x={10} y={10} width={50} height={50}></rect>
   </Svg>
 )
 
