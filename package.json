@@ -5,6 +5,7 @@
   "main": "src/svgx.js",
   "scripts": {
     "check-deps": "npm outdated",
+    "gh-pages": "git subtree --prefix gh-pages push origin gh-pages",
     "lint": "standard",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "NODE_PATH=src babel-tape-runner test/components/Svg.js",
@@ -36,7 +37,6 @@
   "devDependencies": {
     "babel-tape-runner": "^2.0.1",
     "cheerio": "^0.20.0",
-    "gh-pages": "^0.11.0",
     "pre-commit": "^1.1.2",
     "tape": "^4.5.1"
   },
