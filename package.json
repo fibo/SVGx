@@ -8,6 +8,7 @@
     "gh-pages": "git subtree --prefix gh-pages push origin gh-pages",
     "lint": "standard",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "push": "git push origin master; npm run gh-pages",
     "test": "NODE_PATH=src babel-tape-runner test/components/Svg.js",
     "example": "NODE_PATH=src babel-node example.js"
   },
