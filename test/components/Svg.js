@@ -10,7 +10,7 @@ test('Svg', (t) => {
   const height = 100
   const width = 100
 
-  const el = <Svg width={width} height={height}/>
+  const el = <Svg width={width} height={height} />
 
   const $ = dom.load(render(el), { xmlMode: true })
 

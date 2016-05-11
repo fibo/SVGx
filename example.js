@@ -9,7 +9,7 @@ const opts = { doctype: true, xmlns: true }
 
 const jsx = (
   <Svg width={100} height={100}>
-    <Rect x={10} y={10} width={50} height={50}/>
+    <Rect x={10} y={10} width={50} height={50} />
   </Svg>
 )
 
