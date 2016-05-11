@@ -7,7 +7,9 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
-### Added
+## [0.4.0] - 2016-05-11
+
+- Transpile to Nodejs compatible code
 
 ## [0.3.0] - 2016-05-01
 
@@ -16,7 +18,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 - CHANGELOG.md
 - render
 - Svg component default props: version
-- Rect component
+- React component
 - Inject xmlns attributes
 - Prepend doctype
 - gh-pages
@@ -28,6 +30,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 - Svg component
 - example.js
 
-[Unreleased]: https://github.com/fibo/Svgx/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/fibo/Svgx/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/fibo/SVGx/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/fibo/SVGx/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/fibo/SVGx/compare/v0.1.0...v0.2.0
