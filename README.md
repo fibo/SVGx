@@ -32,7 +32,7 @@ You can try this [example.js][example_js] script, by launching commands
 ```bash
 git clone https://github.com/fibo/SVGx.git
 cd SVGx
-npm install --production
+npm install
 npm run example
 ```
 
