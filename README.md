@@ -6,10 +6,10 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-* [Description](#description)
-* [Installation](#installation)
-* [Api](#api)
-* [License](#license)
+[Description](#description) |
+[Installation](#installation) |
+[Api](#api) |
+[License](#license)
 
 ## Description
 

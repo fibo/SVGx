@@ -7,9 +7,22 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
-## [0.4.2] - 2016-05-11
+### Added
+
+[x] Removed transpiled build, only babel-node is supported
+[ ] using dynamic changelog
+[ ] g14n.info analytics
+
+### Changed
+
+[ ] directory structure, moved src/ folder into root
+
+## [0.4.3] - 2016-05-11
+
+### Added
 
 - Transpile to Nodejs compatible code
+- docs
 
 ## [0.3.0] - 2016-05-01
 

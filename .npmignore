@@ -1,2 +1,0 @@
-# Include build/ since it contains code transpiled for Node.js
-!build
