@@ -1,6 +1,6 @@
 {
   "name": "svgx",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "is a universal SVG renderer",
   "main": "svgx.js",
   "engines": {
@@ -19,7 +19,7 @@
     "postversion": "git push origin v${npm_package_version}; npm publish; npm run push",
     "postpublish": "npm run gh-pages:_data; git commit -am ':arrow_up: updated version'; npm run push",
     "postupdate-deps": "npm test && git commit -am ':arrow_up: updated deps' || git checkout -- package.json",
-    "push": "git push origin master; npm run gh-pages",
+    "push": "git push origin master; npm run gh-pages:push",
     "test": "NODE_PATH=. tape -r babel-register test/components/Svg.js",
     "update-deps": "npm update --save --dev"
   },
@@ -55,7 +55,7 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
-    "cheerio": "^0.21.0",
+    "cheerio": "^0.20.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   }
