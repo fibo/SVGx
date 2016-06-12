@@ -15,6 +15,12 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v0.5.1] - 2016-06-12
+
+### Changed
+
+- Downgraded cheerio from 0.21 to 0.20, due to [this issue](https://github.com/cheeriojs/cheerio/issues/872).
+
 ## [v0.5.0] - 2016-06-12
 
 ### Added
@@ -22,6 +28,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 - Dynamic changelog
 - Circle component
 - update-deps npm script
+- Deps update
 
 ### Changed
 
