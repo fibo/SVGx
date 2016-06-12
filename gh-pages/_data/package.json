@@ -11,7 +11,7 @@
     "example": "NODE_PATH=. babel-node example.js",
     "gh-pages:_data": "for x in package.json tags.json; do npm run gh-pages:_data:$x; done",
     "gh-pages:_data:package.json": "cp package.json gh-pages/_data/",
-    "gh-pages:_data:tags.json": "wget https://api.github.com/repos/fibo/SVGx/tags -O gh-pages/_data/tags.json",
+    "gh-pages:_data:tags.json": "wget https://api.github.com/repos/fibo/algebra/tags -O gh-pages/_data/tags.json",
     "gh-pages:push": "git subtree --prefix gh-pages push origin gh-pages",
     "gh-pages:pull": "git subtree --prefix gh-pages pull origin gh-pages",
     "jekyll": "npm run gh-pages:_data; cd gh-pages; jekyll build; cd ..",

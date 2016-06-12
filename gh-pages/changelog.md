@@ -1,4 +1,12 @@
-# SVGx Change Log
+---
+title: Change Log
+permalink: /changelog
+---
+
+{% assign package = site.data.package %}
+{% assign tags = site.data.tags %}
+
+# Change Log
 
 All notable changes to this project will be documented in this file.
 
@@ -7,24 +15,26 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v0.5.0] - 2016-06-12
+
 ### Added
 
-[x] Removed transpiled build, only babel-node is supported
-[ ] using dynamic changelog
-[ ] g14n.info analytics
+- Dynamic changelog
+- Circle component
 
 ### Changed
 
-[ ] directory structure, moved src/ folder into root
+- Directory structure, moved src/ folder into root
+- Removed transpiled build, only babel-node is supported
 
-## [0.4.3] - 2016-05-11
+## [v0.4.3] - 2016-05-11
 
 ### Added
 
 - Transpile to Nodejs compatible code
 - docs
 
-## [0.3.0] - 2016-05-01
+## [v0.3.0] - 2016-05-01
 
 ### Added
 
@@ -36,14 +46,17 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 - Prepend doctype
 - gh-pages
 
-## [0.2.0] - 2016-06-28
+## [v0.2.0] - 2016-06-28
 
 ### Added
 
 - Svg component
 - example.js
 
-[Unreleased]: https://github.com/fibo/Svgx/compare/v0.4.2...HEAD
-[0.4.0]: https://github.com/fibo/SVGx/compare/v0.3.0...v0.4.2
-[0.3.0]: https://github.com/fibo/SVGx/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/fibo/SVGx/compare/v0.1.0...v0.2.0
+[Unreleased]: https://github.com/fibo//SVGx/compare/v{{ package.version }}...HEAD
+
+{% for tag in tags offset:2 %}
+  {% assign current = tags[forloop.index0].name %}
+  {% assign previous = tags[forloop.index].name %}
+  [{{ current }}]: https://github.com/fibo//SVGx/compare/{{ previous }}...{{ current }}
+{% endfor %}
