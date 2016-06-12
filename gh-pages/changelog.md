@@ -21,6 +21,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 - Dynamic changelog
 - Circle component
+- update-deps npm script
 
 ### Changed
 
