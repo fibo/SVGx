@@ -1,5 +1,4 @@
 import render from './render'
-import Svg from './components/Svg'
-import Rect from './components/Rect'
+import { Svg, Circle, Rect } from './components'
 
-export { render, Svg, Rect }
+export { render, Svg, Circle, Rect }

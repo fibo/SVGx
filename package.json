@@ -20,7 +20,7 @@
     "postpublish": "npm run gh-pages:_data; git commit -am ':arrow_up: updated version'; npm run push",
     "postupdate-deps": "npm test && git commit -am ':arrow_up: updated deps' || git checkout -- package.json",
     "push": "git push origin master; npm run gh-pages",
-    "test": "NODE_PATH=. babel-tape-runner test/components/Svg.js",
+    "test": "NODE_PATH=. tape -r babel-register test/components/Svg.js",
     "update-deps": "npm update --save --dev"
   },
   "pre-commit": [

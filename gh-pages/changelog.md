@@ -26,6 +26,7 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 - Directory structure, moved src/ folder into root
 - Removed transpiled build, only babel-node is supported
+- Removed babel-tape-runner
 
 ## [v0.4.3] - 2016-05-11
 
