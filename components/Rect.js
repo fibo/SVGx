@@ -1,10 +1,8 @@
 import React, { PropTypes } from 'react'
 
-const Rect = (props) => {
-  return (
-    <rect {...props}>{props.children}</rect>
-  )
-}
+const Rect = (props) => (
+  <rect {...props}>{props.children}</rect>
+)
 
 Rect.propTypes = {
   x: PropTypes.number,

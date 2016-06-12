@@ -1,10 +1,8 @@
 import React, { PropTypes } from 'react'
 
-const Svg = (props) => {
-  return (
-    <svg {...props}>{props.children}</svg>
-  )
-}
+const Svg = (props) => (
+  <svg {...props}>{props.children}</svg>
+)
 
 Svg.propTypes = {
   contentStyleType: PropTypes.string,
