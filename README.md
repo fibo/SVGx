@@ -23,7 +23,6 @@ the following features:
 
 * Optionally prepend doctype.
 * Optionally inject `xmlns` and `xmlns:xlink` attributes.
-* Define required `propTypes` and sensible `defaultProps`.
 
 Actually, this package is also a recipe to *render and test SVG server side*.
 
@@ -49,18 +48,6 @@ npm install svgx
 ```
 
 ## API
-
-### `svgx.Svg`
-
-> React component, implements `svg` tag.
-
-### `svgx.Circle`
-
-> React component, implements `circle` tag.
-
-### `svgx.Rect`
-
-> React component, implements `rect` tag.
 
 ### `svgx.render(jsx[, opts])`
 

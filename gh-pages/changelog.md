@@ -15,10 +15,15 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+### Changed
+
+[ ] Remove all components, they do not add value
+[ ] Simplify structure, make it minimal
+
 ### Added
 
-- Restored babel build, it is the only way to get es6 import/export workign on Nodejs
-- babel-plugin-transform-es2015-modules-commonjs
+[ ] Restored babel build, it is the only way to get es6 import/export workign on Nodejs
+[x] babel-plugin-transform-es2015-modules-umd
 
 ## [v0.5.1] - 2016-06-12
 
