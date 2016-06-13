@@ -55,7 +55,7 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.21.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   }
