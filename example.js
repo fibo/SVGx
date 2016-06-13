@@ -3,24 +3,24 @@
 import React from 'react'
 import fs from 'fs'
 import path from 'path'
-import { render, Svg, Rect, Circle } from 'svgx'
+import render from 'svgx'
 
 const opts = { doctype: true, xmlns: true }
 
 const jsx = (
-  <Svg width={200} height={200}>
-    <Rect
+  <svg width={200} height={200}>
+    <rect
       x={10} y={10}
       width={50} height={50}
       fill={'gold'}
       style={{ stroke: 'black', strokeWidth: 1 }}
     />
-    <Circle
+    <circle
       cx={110} cy={70} r={50}
       fill={'hotpink'}
       style={{ stroke: 'darkgrey', strokeWidth: 2 }}
     />
-  </Svg>
+  </svg>
 )
 
 const svgOutput = render(jsx, opts)

@@ -15,6 +15,8 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v0.6.0] - 2016-06-13
+
 ### Changed
 
 - Remove all components, they do not add value
