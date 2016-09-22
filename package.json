@@ -60,7 +60,8 @@
   },
   "dependencies": {
     "cheerio": "^0.20.0",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "standard": "^8.1.0"
   }
 }
