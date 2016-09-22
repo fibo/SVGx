@@ -59,9 +59,8 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "standard": "^8.1.0"
+    "react-dom": "^15.3.2"
   }
 }
