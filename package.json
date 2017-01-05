@@ -15,7 +15,8 @@
     "gh-pages:_data:tags.json": "wget https://api.github.com/repos/fibo/SVGx/tags -O gh-pages/_data/tags.json",
     "gh-pages:push": "git subtree --prefix gh-pages push origin gh-pages",
     "gh-pages:pull": "git subtree --prefix gh-pages pull origin gh-pages",
-    "jekyll": "npm run gh-pages:_data; cd gh-pages; jekyll build; cd ..",
+    "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > gh-pages/index.md; cat README.md >> gh-pages/index.md",
+    "jekyll": "npm run homepage; npm run gh-pages:_data; cd gh-pages; jekyll build; cd ..",
     "lint": "standard svgx.js test.js",
     "postversion": "git push origin v${npm_package_version}; npm publish; npm run push",
     "prepublish": "npm run build",
@@ -47,7 +48,7 @@
   "bugs": {
     "url": "https://github.com/fibo/SVGx/issues"
   },
-  "homepage": "http://npm.im/svgx",
+  "homepage": "http://g14n.info/SVGx",
   "devDependencies": {
     "babel-cli": "^6.8.0",
     "babel-plugin-add-module-exports": "^0.2.1",
