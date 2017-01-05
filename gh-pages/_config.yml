@@ -21,7 +21,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: page
+      layout: common/page
 
 # Custom vars
 
