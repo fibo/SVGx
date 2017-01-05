@@ -29,7 +29,7 @@
 
   var doctype = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n';
   var render = function render(jsx) {
-    var opts = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+    var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     var svgx = _server2.default.renderToStaticMarkup(jsx);
 

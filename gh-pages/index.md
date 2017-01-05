@@ -16,10 +16,6 @@ title: svgx
 
 ## Description
 
-SVGx is at a very early stage.
-
-> Every feedback/contribution is welcome!
-
 Thanks to React it is feasible to achieve server side rendering SVG. However,
 there are few common pit falls. In order to avoid them this package implements
 the following features:
