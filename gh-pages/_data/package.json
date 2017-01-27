@@ -1,6 +1,6 @@
 {
   "name": "svgx",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "is a universal SVG renderer",
   "main": "index.js",
   "engines": {
