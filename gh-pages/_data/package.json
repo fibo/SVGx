@@ -1,6 +1,6 @@
 {
   "name": "svgx",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "is a universal SVG renderer",
   "main": "svgx.js",
   "engines": {
@@ -17,7 +17,7 @@
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > gh-pages/index.md; cat README.md >> gh-pages/index.md",
     "jekyll": "npm run homepage; npm run gh-pages:_data; cd gh-pages; jekyll build; cd ..",
     "lint": "standard svgx.js test.js",
-    "postversion": "git push origin v${npm_package_version}; npm publish; npm run push",
+    "postversion": "git push origin v${npm_package_version}; npm publish; npm run gh-pages:_data",
     "postgh-pages:_data": "git commit -am ':arrow_up: updated version'; npm run push",
     "push": "git push origin master; npm run gh-pages:push",
     "test": "NODE_PATH=. tape -r babel-register test.js"
