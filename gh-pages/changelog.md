@@ -15,6 +15,13 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v0.7.0] - 2017-02-05
+
+### Changed
+
+- React is not a declared dependency, but, it is injected as an argument.
+- Using no transpiling, code is ES5 now. Babel is used only as a dev deps for the example.
+
 ## [v0.6.3] - 2017-01-27
 
 ### Added
