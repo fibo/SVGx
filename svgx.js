@@ -5,11 +5,11 @@ const doctype = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 `
 const render = (jsx, opts = {}) => {
-  let svgx = reactDom.renderToStaticMarkup(jsx)
+  var svg = reactDom.renderToStaticMarkup(jsx)
 
-  let $ = dom.load(svgx, { xmlMode: true })
+  var $ = dom.load(svg, { xmlMode: true })
 
-  let $svg = $('svg')
+  var $svg = $('svg')
 
   // Currently, React strips off namespace attributes.
   if (opts.xmlns) {
@@ -17,7 +17,7 @@ const render = (jsx, opts = {}) => {
     $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
   }
 
-  let result = $.html()
+  var result = $.html()
 
   if (opts.doctype) result = doctype + result
 
