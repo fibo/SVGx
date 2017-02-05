@@ -2,13 +2,11 @@
   "name": "svgx",
   "version": "0.6.3",
   "description": "is a universal SVG renderer",
-  "main": "index.js",
+  "main": "svgx.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "babel": "babel svgx.js --out-file index.js",
-    "build": "npm run babel; npm run jekyll",
     "check-deps": "npm outdated",
     "example": "NODE_PATH=. babel-node example.js",
     "gh-pages:_data": "for x in package.json tags.json; do npm run gh-pages:_data:$x; done",
@@ -20,12 +18,10 @@
     "jekyll": "npm run homepage; npm run gh-pages:_data; cd gh-pages; jekyll build; cd ..",
     "lint": "standard svgx.js test.js",
     "postversion": "git push origin v${npm_package_version}; npm publish; npm run push",
-    "prepublish": "npm run build",
+    "prepublish": "npm run jekyll",
     "postpublish": "npm run gh-pages:_data; git commit -am ':arrow_up: updated version'; npm run push",
-    "postupdate-deps": "npm test && git commit -am ':arrow_up: updated deps' || git checkout -- package.json",
     "push": "git push origin master; npm run gh-pages:push",
-    "test": "NODE_PATH=. tape -r babel-register test.js",
-    "update-deps": "npm update --save --dev"
+    "test": "NODE_PATH=. tape -r babel-register test.js"
   },
   "pre-commit": [
     "lint",
@@ -52,16 +48,15 @@
   "homepage": "http://g14n.info/SVGx",
   "devDependencies": {
     "babel-cli": "^6.22.2",
-    "babel-plugin-transform-es2015-modules-umd": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "pre-commit": "^1.2.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "standard": "^8.6.0",
     "tape": "^4.6.3"
   },
   "dependencies": {
-    "cheerio": "^0.22.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "cheerio": "^0.22.0"
   }
 }

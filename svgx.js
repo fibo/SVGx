@@ -1,27 +1,30 @@
-import dom from 'cheerio'
-import reactDom from 'react-dom/server'
+var dom = require('cheerio')
 
-const doctype = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+var doctype = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 `
-const render = (jsx, opts = {}) => {
-  var svg = reactDom.renderToStaticMarkup(jsx)
+function svgx (render) {
+  return function (jsx, opts) {
+    if (!opts) opts = {}
 
-  var $ = dom.load(svg, { xmlMode: true })
+    var svg = render(jsx)
 
-  var $svg = $('svg')
+    var $ = dom.load(svg, { xmlMode: true })
 
-  // Currently, React strips off namespace attributes.
-  if (opts.xmlns) {
-    $svg.attr('xmlns', 'http://www.w3.org/2000/svg')
-    $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+    var $svg = $('svg')
+
+    // Currently, React strips off namespace attributes.
+    if (opts.xmlns) {
+      $svg.attr('xmlns', 'http://www.w3.org/2000/svg')
+      $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+    }
+
+    var result = $.html()
+
+    if (opts.doctype) result = doctype + result
+
+    return result
   }
-
-  var result = $.html()
-
-  if (opts.doctype) result = doctype + result
-
-  return result
 }
 
-module.exports = exports.default = render
+module.exports = exports.default = svgx

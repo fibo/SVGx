@@ -8,6 +8,7 @@
 
 [Description](#description) |
 [Installation](#installation) |
+[Usage](#usage) |
 [Api](#api) |
 [License](#license)
 
@@ -43,9 +44,49 @@ With [npm](https://npmjs.org/) do
 npm install svgx
 ```
 
+## Usage
+
+Installing `react` and `react-dom` is up to you: `svgx` does not declare
+them as dependencies, cause you could use a different version or even
+other React-like engine.
+
+For instance do
+
+```
+npm install react react-dom babel-cli
+```
+
+Then run the following script with babel.
+
+```javascript
+#!/usr/bin/env babel-node
+
+import React from 'react'
+import reactDom from 'react-dom/server'
+import svgx from 'svgx'
+
+const render = svgx(reactDom.renderToStaticMarkup)
+
+const jsx = (
+  <svg width={200} height={200}>
+    <circle cx={100} cy={100} r={50} />
+  </svg>
+)
+
+const svgOutput = render(jsx, { doctype: true, xmlns: true })
+
+console.log(svgOutput)
+```
+
 ## API
 
-### `svgx.render(jsx[, opts])`
+### `render = svgx(renderer)`
+
+> Static render function: it works server side.
+
+* **@param** `{Object}` renderer, for instance `reactDom.renderToStaticMarkup`
+
+### `render(jsx[, opts])`
 
 > Static render function: it works server side.
 

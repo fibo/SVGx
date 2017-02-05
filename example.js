@@ -1,9 +1,12 @@
 #!/usr/bin/env babel-node
 
 import React from 'react'
+import reactDom from 'react-dom/server'
 import fs from 'fs'
 import path from 'path'
-import render from 'svgx'
+import svgx from 'svgx'
+
+const render = svgx(reactDom.renderToStaticMarkup)
 
 const opts = { doctype: true, xmlns: true }
 

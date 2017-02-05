@@ -1,7 +1,10 @@
 import dom from 'cheerio'
 import React from 'react'
-import render from 'svgx'
+import reactDom from 'react-dom/server'
+import svgx from 'svgx'
 import test from 'tape'
+
+const render = svgx(reactDom.renderToStaticMarkup)
 
 test('svgx.render(jsx)', (t) => {
   const height = 100
