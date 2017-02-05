@@ -24,4 +24,4 @@ const render = (jsx, opts = {}) => {
   return result
 }
 
-export default render
+module.exports = exports.default = render
