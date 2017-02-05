@@ -1,8 +1,7 @@
 var dom = require('cheerio')
 
-var doctype = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-`
+var doctype = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
+
 function svgx (render) {
   return function (jsx, opts) {
     if (!opts) opts = {}

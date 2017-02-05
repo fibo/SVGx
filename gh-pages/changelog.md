@@ -15,11 +15,12 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
-## [v0.7.1] - 2017-02-05
+## [v0.7.2] - 2017-02-05
 
 ### Fixed
 
 - Removed postpublish npm script, cause it run on install for npm `<5`.
+- Removed template string.
 
 ## [v0.7.0] - 2017-02-05
 
