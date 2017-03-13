@@ -1,5 +1,14 @@
 [
   {
+    "name": "v0.7.3",
+    "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v0.7.3",
+    "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v0.7.3",
+    "commit": {
+      "sha": "50d8b4eaf9a5b0d8559af56cb53286c741f7e88c",
+      "url": "https://api.github.com/repos/fibo/SVGx/commits/50d8b4eaf9a5b0d8559af56cb53286c741f7e88c"
+    }
+  },
+  {
     "name": "v0.7.2",
     "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v0.7.2",
     "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v0.7.2",
