@@ -1,5 +1,7 @@
 # SVGx
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fibo/SVGx.svg)](https://greenkeeper.io/)
+
 > is a universal SVG renderer
 
 [![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx) [![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master) [![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx) [![Change log](https://img.shields.io/badge/change-log-blue.svg)](http://g14n.info/SVGx/changelog)
