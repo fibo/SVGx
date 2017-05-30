@@ -1,4 +1,4 @@
 node_modules
 npm-debug.log
-gh-pages/_site
+docs/_site
 .DS_Store
