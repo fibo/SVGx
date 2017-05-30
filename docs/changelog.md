@@ -15,6 +15,10 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+### Added
+
+- docs/ folder instead of gh-pages
+
 ## [v0.7.2] - 2017-02-05
 
 ### Fixed
