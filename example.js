@@ -28,7 +28,7 @@ const jsx = (
 
 const svgOutput = render(jsx, opts)
 
-const filePath = path.join(__dirname, 'gh-pages/example.svg')
+const filePath = path.join(__dirname, 'docs/example.svg')
 
 fs.writeFile(filePath, svgOutput, 'utf8', (err) => {
   if (err) throw err
