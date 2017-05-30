@@ -1,17 +1,8 @@
 
-domain: g14n.info
-
-permalink: ./:year/:month/:title/
-
 gems:
   - jekyll-sitemap
 
 markdown: kramdown
-
-exclude:
-  - npm-debug.log
-  - node_modules/
-  - package.json
 
 # Defaults
 
@@ -22,9 +13,4 @@ defaults:
       type: "pages"
     values:
       layout: common/page
-
-# Custom vars
-
-google-analytics:
-  id: UA-12635045-12
 
