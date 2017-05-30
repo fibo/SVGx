@@ -7,15 +7,16 @@
 <head>
   {% include common/meta.html %}
   {% include common/favicon.html %}
+  {% include common/cookieconsent.html %}
   {% include common/style.html %}
 </head>
 <body>
   {% include common/nav.html %}
 
-  <div class="container">
-    {{ content }}
-  </div>
+  <main>{{ content }}</main>
 
+  {% include common/footer.html %}
   {% include common/analytics.html %}
+  {% include common/js-bundle.html %}
 </body>
 </html>
