@@ -1,10 +1,20 @@
 
-{% assign nav = page.nav || site.nav  %}
+{% assign nav = page.nav | default: site.nav  %}
 
-<nav role="navigation">
+<nav>
   <ul>
   {% for item in nav %}
-    <li><a href="{{ item[1] }}">{{ item[0] }}</a></li>
+    <li><a href="{{ item[1] }}" onclick="toggleNav()">{{ item[0] }}</a></li>
   {% endfor %}
+    <li id="hamburgericon" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </li>
   </ul>
+  <script>
+  </script>
 </nav>
