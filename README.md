@@ -56,13 +56,13 @@ other React-like engine.
 
 For instance do
 
-```
+```bash
 npm install react react-dom babel-cli
 ```
 
 Then run the following script with babel.
 
-```javascript
+```jsx
 #!/usr/bin/env babel-node
 
 import React from 'react'
