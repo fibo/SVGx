@@ -8,10 +8,8 @@ import svgx from 'svgx'
 
 const render = svgx(reactDom.renderToStaticMarkup)
 
-const opts = { doctype: true, xmlns: true, responsive: true }
-
 const jsx = (
-  <svg width={800} height={400}>
+  <svg viewBox='0 0 800 400'>
     <rect
       x={510} y={10}
       width={200} height={200}
@@ -26,7 +24,7 @@ const jsx = (
   </svg>
 )
 
-const svgOutput = render(jsx, opts)
+const svgOutput = render(jsx)
 
 const filePath = path.join(__dirname, 'docs/example.svg')
 

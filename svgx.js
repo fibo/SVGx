@@ -1,10 +1,14 @@
 var dom = require('cheerio')
+var no = require('not-defined')
 
 var doctype = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 
 function svgx (render) {
   return function (jsx, opts) {
-    if (!opts) opts = {}
+    // Default options.
+    if (no(opts)) opts = {}
+    if (no(opts.doctype)) opts.doctype = true
+    if (no(opts.xmlns)) opts.xmlns = true
 
     var svg = render(jsx)
 
@@ -18,8 +22,8 @@ function svgx (render) {
       $svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
     }
 
-    if (opts.responsive) {
-      $svg.prepend('<style>svg { width: 100%; height: auto }</style>')
+    if (opts.style) {
+      $svg.prepend('<style>' + opts.style + '</style>')
     }
 
     var result = $.html()

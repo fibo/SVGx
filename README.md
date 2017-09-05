@@ -77,7 +77,7 @@ const jsx = (
   </svg>
 )
 
-const svgOutput = render(jsx, { doctype: true, xmlns: true })
+const svgOutput = render(jsx)
 
 console.log(svgOutput)
 ```
@@ -97,9 +97,8 @@ console.log(svgOutput)
 
 * @param {ReactElement} jsx
 * @param {Object} [opts]
-* @param {Boolean} [opts.doctype]
-* @param {Boolean} [opts.responsive]
-* @param {Boolean} [opts.xmlns]
+* @param {Boolean} [opts.doctype] add xml and doctype header, defaults to `true`
+* @param {Boolean} [opts.xmlns] add namespace attributes, defaults to `true`
 
 ## License
 
