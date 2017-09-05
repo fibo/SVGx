@@ -98,6 +98,7 @@ console.log(svgOutput)
 * @param {ReactElement} jsx
 * @param {Object} [opts]
 * @param {Boolean} [opts.doctype] add xml and doctype header, defaults to `true`
+* @param {String} [opts.style] injects given CSS in a style tag
 * @param {Boolean} [opts.xmlns] add namespace attributes, defaults to `true`
 
 ## License

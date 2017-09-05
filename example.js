@@ -17,14 +17,15 @@ const jsx = (
       style={{ stroke: 'black', strokeWidth: 1 }}
     />
     <circle
+      className='hot'
       cx={210} cy={270} r={50}
-      fill={'hotpink'}
-      style={{ stroke: 'darkgrey', strokeWidth: 2 }}
     />
   </svg>
 )
 
-const svgOutput = render(jsx)
+const svgOutput = render(jsx, {
+  style: '.hot { fill: hotpink; stroke: darkgrey; stroke-width: 2 }'
+})
 
 const filePath = path.join(__dirname, 'docs/example.svg')
 
