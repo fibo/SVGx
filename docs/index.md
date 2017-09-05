@@ -59,13 +59,13 @@ other React-like engine.
 
 For instance do
 
-```
+```bash
 npm install react react-dom babel-cli
 ```
 
 Then run the following script with babel.
 
-```javascript
+```jsx
 #!/usr/bin/env babel-node
 
 import React from 'react'
@@ -91,16 +91,18 @@ console.log(svgOutput)
 
 > Static render function: it works server side.
 
-* **@param** `{Object}` renderer, for instance `reactDom.renderToStaticMarkup`
+* @param {Object} renderer, for instance `reactDom.renderToStaticMarkup`
+* @return {Function} render
 
 ### `render(jsx[, opts])`
 
 > Static render function: it works server side.
 
-* **@param** `{ReactElement}` jsx
-* **@param** `{Object}` [opts]
-* **@param** `{Boolean}` [opts.doctype]
-* **@param** `{Boolean}` [opts.xmlns]
+* @param {ReactElement} jsx
+* @param {Object} [opts]
+* @param {Boolean} [opts.doctype]
+* @param {Boolean} [opts.responsive]
+* @param {Boolean} [opts.xmlns]
 
 ## License
 

@@ -8,18 +8,18 @@ import svgx from 'svgx'
 
 const render = svgx(reactDom.renderToStaticMarkup)
 
-const opts = { doctype: true, xmlns: true }
+const opts = { doctype: true, xmlns: true, responsive: true }
 
 const jsx = (
-  <svg width={200} height={200}>
+  <svg width={800} height={400}>
     <rect
-      x={10} y={10}
-      width={50} height={50}
+      x={510} y={10}
+      width={200} height={200}
       fill={'gold'}
       style={{ stroke: 'black', strokeWidth: 1 }}
     />
     <circle
-      cx={110} cy={70} r={50}
+      cx={210} cy={270} r={50}
       fill={'hotpink'}
       style={{ stroke: 'darkgrey', strokeWidth: 2 }}
     />

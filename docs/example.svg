@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="10" y="10" width="50" height="50" fill="gold" style="stroke:black;stroke-width:1;"/><circle cx="110" cy="70" r="50" fill="hotpink" style="stroke:darkgrey;stroke-width:2;"/></svg>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>svg { width: 100%; height: auto }</style><rect x="510" y="10" width="200" height="200" fill="gold" style="stroke:black;stroke-width:1;"/><circle cx="210" cy="270" r="50" fill="hotpink" style="stroke:darkgrey;stroke-width:2;"/></svg>
