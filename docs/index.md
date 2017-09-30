@@ -5,19 +5,17 @@ title: svgx
 
 > is a universal SVG renderer
 
-[![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx)
-[![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master)
-[![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx)
-[![Greenkeeper badge](https://badges.greenkeeper.io/fibo/SVGx.svg)](https://greenkeeper.io/)
-[![Change log](https://img.shields.io/badge/change-log-blue.svg)](http://g14n.info/SVGx/changelog)
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
 [Description](#description) |
 [Installation](#installation) |
 [Usage](#usage) |
 [Api](#api) |
 [License](#license)
+
+[![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx)
+[![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master)
+[![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Change log](https://img.shields.io/badge/change-log-blue.svg)](http://g14n.info/SVGx/changelog)
 
 ## Description
 
@@ -27,6 +25,7 @@ the following features:
 
 * Optionally prepend doctype.
 * Optionally inject `xmlns` and `xmlns:xlink` attributes.
+* Optionally inject a `style` tag.
 
 Actually, this package is also a recipe to *render and test SVG server side*.
 
@@ -65,7 +64,7 @@ npm install react react-dom babel-cli
 
 Then run the following script with babel.
 
-```jsx
+```javascript
 #!/usr/bin/env babel-node
 
 import React from 'react'
@@ -80,7 +79,7 @@ const jsx = (
   </svg>
 )
 
-const svgOutput = render(jsx, { doctype: true, xmlns: true })
+const svgOutput = render(jsx)
 
 console.log(svgOutput)
 ```
@@ -98,11 +97,11 @@ console.log(svgOutput)
 
 > Static render function: it works server side.
 
-* @param {ReactElement} jsx
+* @param {ReactElement} jsx to be rendered.
 * @param {Object} [opts]
-* @param {Boolean} [opts.doctype]
-* @param {Boolean} [opts.responsive]
-* @param {Boolean} [opts.xmlns]
+* @param {Boolean} [opts.doctype] add xml and doctype header, defaults to `true`.
+* @param {String} [opts.style] injects given CSS in a style tag.
+* @param {Boolean} [opts.xmlns] add namespace attributes, defaults to `true`.
 
 ## License
 

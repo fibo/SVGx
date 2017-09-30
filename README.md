@@ -61,7 +61,7 @@ npm install react react-dom babel-cli
 
 Then run the following script with babel.
 
-```jsx
+```javascript
 #!/usr/bin/env babel-node
 
 import React from 'react'

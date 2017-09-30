@@ -7,15 +7,13 @@
     "node": ">=4"
   },
   "scripts": {
+    "build": "npm run example; npm run jekyll",
     "check-deps": "npm outdated",
     "example": "NODE_PATH=. babel-node example.js",
-    "docs:_data": "for x in package.json tags.json; do npm run docs:_data:$x; done",
-    "docs:_data:package.json": "cp package.json docs/_data/",
-    "docs:_data:tags.json": "wget https://api.github.com/repos/fibo/SVGx/tags -O docs/_data/tags.json",
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "jekyll": "cd docs; jekyll build; cd ..",
     "lint": "standard svgx.js test.js",
-    "postversion": "git push origin v${npm_package_version}; npm publish; npm run docs:_data",
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "prejekyll": "npm run homepage",
     "test": "NODE_PATH=. tape -r babel-register test.js"
   },
