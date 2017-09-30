@@ -15,10 +15,22 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v1.0.0] - 2017-09-30
+
 ### Added
 
-- docs/ folder instead of gh-pages
-- updated cheerio
+- Updated deps, React, cheerio, etc... .
+- Option parameter: `style`.
+
+### Fixed
+
+- Better documentation.
+- Using docs/ folder instead of gh-pages/.
+- Relaxed development dependencies.
+
+### Removed
+
+- greenkeeper integration
 
 ## [v0.7.2] - 2017-02-05
 
