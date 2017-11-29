@@ -55,6 +55,6 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "not-defined": "^2.0.0"
+    "not-defined": "^2.0.1"
   }
 }
