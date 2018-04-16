@@ -15,6 +15,18 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v1.1.0] - 2018-04-16
+
+### Added
+
+- Updated deps.
+- Using babel-env.
+- Npm ignores docs/
+
+### Removed
+
+- Jekyll stuff.
+
 ## [v1.0.0] - 2017-09-30
 
 ### Added

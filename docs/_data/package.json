@@ -1,23 +1,22 @@
 {
   "name": "svgx",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "is a universal SVG renderer",
   "main": "svgx.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "build": "npm run example; npm run jekyll",
+    "build": "npm run docs; npm run example",
     "check-deps": "npm outdated",
     "example": "NODE_PATH=. babel-node example.js",
+    "docs": "npm run docs:_data; npm run homepage",
     "docs:_data": "for x in package.json tags.json; do npm run docs:_data:$x; done",
     "docs:_data:package.json": "cp package.json docs/_data",
     "docs:_data:tags.json": "wget https://api.github.com/repos/fibo/${npm_package_name}/tags -O docs/_data/tags.json",
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
-    "jekyll": "cd docs; jekyll build; cd ..",
     "lint": "standard svgx.js test.js",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "prejekyll": "npm run homepage; npm run docs:_data",
     "test": "NODE_PATH=. tape -r babel-register test.js"
   },
   "pre-commit": [
@@ -44,17 +43,16 @@
   },
   "homepage": "http://g14n.info/SVGx",
   "devDependencies": {
-    "babel-cli": "~6",
-    "babel-preset-es2015": "~6",
-    "babel-preset-react": "~6",
-    "pre-commit": "~1",
-    "react": "~16",
-    "react-dom": "~16",
-    "standard": "~10",
-    "tape": "~4"
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "pre-commit": "^1.2.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "standard": "^11.0.1",
+    "tape": "^4.9.0"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "not-defined": "^2.0.0"
+    "not-defined": "^2.0.1"
   }
 }
