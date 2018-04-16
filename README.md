@@ -51,12 +51,13 @@ npm install svgx
 
 Installing `react` and `react-dom` is up to you: `svgx` does not declare
 them as dependencies, cause you could use a different version or even
-other React-like engine.
+other React-like engine. Same logic applies to awesome babel packages, you
+could use any other transpiler.
 
-For instance do
+Anyway, to get the job done, you can do
 
 ```bash
-npm install react react-dom babel-cli
+npm install react react-dom babel-cli babel-env --save-dev
 ```
 
 Then run the following script with babel.
