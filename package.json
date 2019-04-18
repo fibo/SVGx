@@ -4,7 +4,7 @@
   "description": "is a universal SVG renderer",
   "main": "svgx.js",
   "engines": {
-   "node": ">=4"
+    "node": ">=4"
   },
   "scripts": {
     "build": "npm run docs; npm run example",
@@ -46,13 +46,10 @@
     "babel-cli": "^6.26.0",
     "babel-env": "^2.4.1",
     "pre-commit": "^1.2.2",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "standard": "^11.0.1",
-    "tape": "^4.9.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
   },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "not-defined": "^2.0.1"
-  }
+  "dependencies": {}
 }

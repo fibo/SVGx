@@ -15,6 +15,14 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
 ## [Unreleased]
 
+## [v2.0.0] - 2019-04-18
+
+### Removed
+
+- Now cheerio is not a dependency, see [issue 1](https://github.com/fibo/SVGx/issues/1).
+- Optional `style` parameter is removed, the homonym JSX tag works fine, see *example.js* file.
+- David dependency badge removed, now we have no deps.
+
 ## [v1.1.0] - 2018-04-16
 
 ### Added
@@ -136,5 +144,5 @@ Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 {% for tag in tags offset:2 %}
   {% assign current = tags[forloop.index0].name %}
   {% assign previous = tags[forloop.index].name %}
-  [{{ current }}]: https://github.com/fibo//SVGx/compare/{{ previous }}...{{ current }}
+  [{{ current }}]: https://github.com/fibo/SVGx/compare/{{ previous }}...{{ current }}
 {% endfor %}

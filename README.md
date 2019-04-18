@@ -10,19 +10,14 @@
 
 [![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx)
 [![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master)
-[![Dependency Status](https://david-dm.org/fibo/svgx.svg)](https://david-dm.org/fibo/svgx)
+[![No deps](https://img.shields.io/badge/dependencies-none-green.svg)](https://github.com/fibo/SVGx)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Change log](https://img.shields.io/badge/change-log-blue.svg)](http://g14n.info/SVGx/changelog)
 
 ## Description
 
 Thanks to React it is feasible to achieve server side rendering SVG. However,
-there are few common pit falls. In order to avoid them this package implements
-the following features:
-
-* Optionally prepend doctype.
-* Optionally inject `xmlns` and `xmlns:xlink` attributes.
-* Optionally inject a `style` tag.
+there is a pit fall: doctype is missing. This package prepends a doctype to generated SVG.
 
 Actually, this package is also a recipe to *render and test SVG server side*.
 
@@ -96,10 +91,8 @@ console.log(svgOutput)
 > Static render function: it works server side.
 
 * @param {ReactElement} jsx to be rendered.
-* @param {Object} [opts]
-* @param {Boolean} [opts.doctype] add xml and doctype header, defaults to `true`.
-* @param {String} [opts.style] injects given CSS in a style tag.
-* @param {Boolean} [opts.xmlns] add namespace attributes, defaults to `true`.
+* @param {Object} [opts] Options can be omitted, just ignore them and it will work fine.
+* @param {String} [opts.doctype] defaults to a common SVG doctype. You can remove it by setting it to the blank string `''` or any other doctype you need.
 
 ## License
 

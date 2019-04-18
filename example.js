@@ -10,12 +10,15 @@ const render = svgx(reactDom.renderToStaticMarkup)
 
 const jsx = (
   <svg viewBox='0 0 800 400'>
+    <style>{`.hot { fill: hotpink; stroke: pink; stroke-width: 2 }`}</style>
+
     <rect
       x={510} y={10}
       width={200} height={200}
       fill={'gold'}
       style={{ stroke: 'black', strokeWidth: 1 }}
     />
+
     <circle
       className='hot'
       cx={210} cy={270} r={50}
@@ -23,9 +26,7 @@ const jsx = (
   </svg>
 )
 
-const svgOutput = render(jsx, {
-  style: '.hot { fill: hotpink; stroke: darkgrey; stroke-width: 2 }'
-})
+const svgOutput = render(jsx)
 
 const filePath = path.join(__dirname, 'docs/example.svg')
 
