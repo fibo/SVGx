@@ -9,7 +9,11 @@ import svgx from 'svgx'
 const render = svgx(reactDom.renderToStaticMarkup)
 
 const jsx = (
-  <svg viewBox='0 0 800 400'>
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    xmlnsXlink='http://www.w3.org/1999/xlink'
+    viewBox='0 0 800 400'
+  >
     <style>{`.hot { fill: hotpink; stroke: pink; stroke-width: 2 }`}</style>
 
     <rect

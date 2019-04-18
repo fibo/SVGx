@@ -67,7 +67,11 @@ import svgx from 'svgx'
 const render = svgx(reactDom.renderToStaticMarkup)
 
 const jsx = (
-  <svg width={200} height={200}>
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    xmlnsXlink='http://www.w3.org/1999/xlink'
+    width={200} height={200}
+  >
     <circle cx={100} cy={100} r={50} />
   </svg>
 )
@@ -76,6 +80,8 @@ const svgOutput = render(jsx)
 
 console.log(svgOutput)
 ```
+
+**NOTA BENE**: Attributes `xmlns` and `xmlnsXlink` are **mandatory** to get a valid SVG file.
 
 ## API
 
