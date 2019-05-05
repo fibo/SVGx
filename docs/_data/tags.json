@@ -1,12 +1,43 @@
 [
   {
+    "name": "v2.0.2",
+    "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v2.0.2",
+    "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v2.0.2",
+    "commit": {
+      "sha": "a71419c756c744f5b0f94ede133e9dbd18de23d7",
+      "url": "https://api.github.com/repos/fibo/SVGx/commits/a71419c756c744f5b0f94ede133e9dbd18de23d7"
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djIuMC4y"
+  },
+  {
+    "name": "v2.0.1",
+    "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v2.0.1",
+    "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v2.0.1",
+    "commit": {
+      "sha": "ff3f01c34cb9e15758d287e16e8cf2bc0ed138c9",
+      "url": "https://api.github.com/repos/fibo/SVGx/commits/ff3f01c34cb9e15758d287e16e8cf2bc0ed138c9"
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djIuMC4x"
+  },
+  {
+    "name": "v2.0.0",
+    "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v2.0.0",
+    "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v2.0.0",
+    "commit": {
+      "sha": "d96582ec02764f5cf5069480f7472ee67f2d832d",
+      "url": "https://api.github.com/repos/fibo/SVGx/commits/d96582ec02764f5cf5069480f7472ee67f2d832d"
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djIuMC4w"
+  },
+  {
     "name": "v1.1.0",
     "zipball_url": "https://api.github.com/repos/fibo/SVGx/zipball/v1.1.0",
     "tarball_url": "https://api.github.com/repos/fibo/SVGx/tarball/v1.1.0",
     "commit": {
       "sha": "7add6a4543b0954dd0a2260dda147c8bfb3933b3",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/7add6a4543b0954dd0a2260dda147c8bfb3933b3"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djEuMS4w"
   },
   {
     "name": "v1.0.1",
@@ -15,7 +46,8 @@
     "commit": {
       "sha": "bd6f32d5ae3e590f3d5f2b3c379e5cdd3846edb5",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/bd6f32d5ae3e590f3d5f2b3c379e5cdd3846edb5"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djEuMC4x"
   },
   {
     "name": "v1.0.0",
@@ -24,7 +56,8 @@
     "commit": {
       "sha": "f93e53707bc4bd6867a67bd57723f9cbc84abf56",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/f93e53707bc4bd6867a67bd57723f9cbc84abf56"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djEuMC4w"
   },
   {
     "name": "v0.8.0",
@@ -33,7 +66,8 @@
     "commit": {
       "sha": "13e3df7fcc3a744d02b112e0101ba46dfba55f66",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/13e3df7fcc3a744d02b112e0101ba46dfba55f66"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuOC4w"
   },
   {
     "name": "v0.7.3",
@@ -42,7 +76,8 @@
     "commit": {
       "sha": "50d8b4eaf9a5b0d8559af56cb53286c741f7e88c",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/50d8b4eaf9a5b0d8559af56cb53286c741f7e88c"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNy4z"
   },
   {
     "name": "v0.7.2",
@@ -51,7 +86,8 @@
     "commit": {
       "sha": "d1278776c8946bef6f2e7a5c093afbd47612b091",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/d1278776c8946bef6f2e7a5c093afbd47612b091"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNy4y"
   },
   {
     "name": "v0.7.1",
@@ -60,7 +96,8 @@
     "commit": {
       "sha": "fd9c0ffde876d6e8ec8f8fde9beef59df3454ce1",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/fd9c0ffde876d6e8ec8f8fde9beef59df3454ce1"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNy4x"
   },
   {
     "name": "v0.7.0",
@@ -69,7 +106,8 @@
     "commit": {
       "sha": "91b4f4921659f6b4b62995d3c958ce109890ad7f",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/91b4f4921659f6b4b62995d3c958ce109890ad7f"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNy4w"
   },
   {
     "name": "v0.6.3",
@@ -78,7 +116,8 @@
     "commit": {
       "sha": "6adffbc0b1d6cae0811eef4bfc2bfb42d6f044fa",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/6adffbc0b1d6cae0811eef4bfc2bfb42d6f044fa"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNi4z"
   },
   {
     "name": "v0.6.2",
@@ -87,7 +126,8 @@
     "commit": {
       "sha": "0753f30303d20915eeaaa4d290afa4809b5aedcd",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/0753f30303d20915eeaaa4d290afa4809b5aedcd"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNi4y"
   },
   {
     "name": "v0.6.1",
@@ -96,7 +136,8 @@
     "commit": {
       "sha": "1b9d5c6990a5c86b1a641b3ea0e464ab425d70c8",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/1b9d5c6990a5c86b1a641b3ea0e464ab425d70c8"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNi4x"
   },
   {
     "name": "v0.6.0",
@@ -105,7 +146,8 @@
     "commit": {
       "sha": "2d73c83946f5803eddd6f7703517e43b02cb3e4e",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/2d73c83946f5803eddd6f7703517e43b02cb3e4e"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNi4w"
   },
   {
     "name": "v0.5.1",
@@ -114,7 +156,8 @@
     "commit": {
       "sha": "b9abc7f7ed5e9bafa49f1139ea6f5656629402b8",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/b9abc7f7ed5e9bafa49f1139ea6f5656629402b8"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNS4x"
   },
   {
     "name": "v0.5.0",
@@ -123,7 +166,8 @@
     "commit": {
       "sha": "0d2d6901974f72396a82dd7f79e43854db2f556d",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/0d2d6901974f72396a82dd7f79e43854db2f556d"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNS4w"
   },
   {
     "name": "v0.4.3",
@@ -132,7 +176,8 @@
     "commit": {
       "sha": "c6ba1ce868fca43609c5f7a98fbc7e290e6e92fe",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/c6ba1ce868fca43609c5f7a98fbc7e290e6e92fe"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNC4z"
   },
   {
     "name": "v0.4.2",
@@ -141,7 +186,8 @@
     "commit": {
       "sha": "92697a21849978399fc4f48dd1e7717fccb639ef",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/92697a21849978399fc4f48dd1e7717fccb639ef"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNC4y"
   },
   {
     "name": "v0.4.1",
@@ -150,7 +196,8 @@
     "commit": {
       "sha": "f25b50152132612026198a47559da012feabcc4f",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/f25b50152132612026198a47559da012feabcc4f"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNC4x"
   },
   {
     "name": "v0.4.0",
@@ -159,7 +206,8 @@
     "commit": {
       "sha": "f71373da4ee946f9471b038b72655de94e5af618",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/f71373da4ee946f9471b038b72655de94e5af618"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuNC4w"
   },
   {
     "name": "v0.3.2",
@@ -168,7 +216,8 @@
     "commit": {
       "sha": "08b95d0eddcfcd192f529c11e492f8bc08180798",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/08b95d0eddcfcd192f529c11e492f8bc08180798"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuMy4y"
   },
   {
     "name": "v0.3.1",
@@ -177,7 +226,8 @@
     "commit": {
       "sha": "eaf1391e517d959a8eff553f8e38fa6bd2137a36",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/eaf1391e517d959a8eff553f8e38fa6bd2137a36"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuMy4x"
   },
   {
     "name": "v0.3.0",
@@ -186,7 +236,8 @@
     "commit": {
       "sha": "6903efe89de7f877e0a56ab33219091ce57f70b8",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/6903efe89de7f877e0a56ab33219091ce57f70b8"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuMy4w"
   },
   {
     "name": "v0.2.0",
@@ -195,7 +246,8 @@
     "commit": {
       "sha": "c10e6f7e9bf0036f57675d8a93ee8b9124b02e50",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/c10e6f7e9bf0036f57675d8a93ee8b9124b02e50"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuMi4w"
   },
   {
     "name": "v0.1.0",
@@ -204,6 +256,7 @@
     "commit": {
       "sha": "b6399e42f704b09350885383e539b5e0378c6e28",
       "url": "https://api.github.com/repos/fibo/SVGx/commits/b6399e42f704b09350885383e539b5e0378c6e28"
-    }
+    },
+    "node_id": "MDM6UmVmNTcyMjYzMTc6djAuMS4w"
   }
 ]
