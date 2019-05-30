@@ -85,20 +85,29 @@ console.log(svgOutput)
 
 ## API
 
-### `render = svgx(renderer)`
+### `svgxRender = svgx(jsxRender)`
 
-> Static render function: it works server side.
+> Get your svgx wrapper.
 
-* @param {Object} renderer, for instance `reactDom.renderToStaticMarkup`
-* @return {Function} render
+```javascript
+/**
+  * @param {Function} jsxRender function, for instance `reactDom.renderToStaticMarkup`
+  * @return {Function} svgxRender wrapper
+  */
+```
 
-### `render(jsx[, opts])`
+### `svgxRender(jsx[, opts])`
 
-> Static render function: it works server side.
+> Wrapper for static JSX render function: it works server side.
 
-* @param {ReactElement} jsx to be rendered.
-* @param {Object} [opts] Options can be omitted, just ignore them and it will work fine.
-* @param {String} [opts.doctype] defaults to a common SVG doctype. You can remove it by setting it to the blank string `''` or any other doctype you need.
+```javascript
+/**
+  * @param {ReactElement} jsx to be rendered.
+  * @param {Object} [opts] Options can be omitted, just ignore them and it will work fine.
+  * @param {String} [opts.doctype] defaults to a common SVG doctype. You can remove it by setting it to the blank string `''` or any other doctype you need.
+  * @return {String} markup in SVG format
+  */
+```
 
 ## License
 

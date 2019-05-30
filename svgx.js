@@ -1,5 +1,5 @@
 function svgx (render) {
-  return function (jsx, opts) {
+  return function svgxRender (jsx, opts) {
     // Default options.
     if (typeof opts === 'undefined') {
       opts = {

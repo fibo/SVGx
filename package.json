@@ -8,7 +8,6 @@
   },
   "scripts": {
     "build": "npm run docs; npm run example",
-    "check-deps": "npm outdated",
     "example": "NODE_PATH=. babel-node example.js",
     "docs": "npm run docs:_data; npm run homepage",
     "docs:_data": "for x in package.json tags.json; do npm run docs:_data:$x; done",
@@ -21,8 +20,7 @@
   },
   "pre-commit": [
     "lint",
-    "test",
-    "check-deps"
+    "test"
   ],
   "repository": {
     "type": "git",
@@ -42,14 +40,6 @@
     "url": "https://github.com/fibo/SVGx/issues"
   },
   "homepage": "http://g14n.info/SVGx",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-env": "^2.4.1",
-    "pre-commit": "^1.2.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "standard": "^12.0.1",
-    "tape": "^4.10.1"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }
