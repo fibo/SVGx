@@ -13,7 +13,12 @@ All notable changes to this project will be documented in this file.
 <sub>This project adheres to [Semantic Versioning](http://semver.org/).
 Changelog format adheres to [Keep a Changelog](http://keepachangelog.com/)</sub>
 
-## [Unreleased]
+## [v2.1.0] - 2019-04-30
+
+### Removed
+
+- travis
+- development dependencies
 
 ## [v2.0.0] - 2019-04-18
 

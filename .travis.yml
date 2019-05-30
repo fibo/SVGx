@@ -1,7 +1,0 @@
-language: node_js
-before_install:
-  - npm install babel-cli babel-env pre-commit react react-dom standard tape --no-save
-node_js:
-  - "stable"
-# Use container-based infrastructure
-sudo: false

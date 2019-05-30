@@ -9,7 +9,6 @@
 [License](#license)
 
 [![NPM version](https://badge.fury.io/js/svgx.svg)](http://badge.fury.io/js/svgx)
-[![Build Status](https://travis-ci.org/fibo/SVGx.svg?branch=master)](https://travis-ci.org/fibo/SVGx?branch=master)
 [![No deps](https://img.shields.io/badge/dependencies-none-green.svg)](https://github.com/fibo/SVGx)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Change log](https://img.shields.io/badge/change-log-blue.svg)](http://g14n.info/SVGx/changelog)
